@@ -85,13 +85,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="85b9-1905-74d0-d64d" name="4 Turret-Mounted light autocannons with 360 Degree arc" page="0" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2245-42e9-0caf-4d91" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a11-2a2d-71a1-a5c4" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="17b5-f860-fe66-e2e5" hidden="false" targetId="3255-2dcb-9963-6c11" type="profile" name="Light automatic cannon"/>
-      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
@@ -102,18 +95,6 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="2"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ff07-d01c-9249-e874" name="Assault Rifle" hidden="false" collective="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5643-a07c-32c6-020f" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e941-f463-0b07-30ab" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="7ef2-7e29-8333-0f18" hidden="false" targetId="bb6e-2a72-519d-8cc7" type="profile" name="Assault Rifle"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="acbc-460e-e7e6-2f79" name="Casement-Mounted  Forward Facing Super Heavy AT Gun" page="0" hidden="false" collective="false" type="upgrade">
@@ -1280,6 +1261,18 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="bb4e-28a3-54e5-eb4a" name="Assault Rifle" hidden="false" collective="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c93-e0f5-a779-0422" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9649-9870-c860-3be6" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8439-1c3e-c9c8-fe2f" hidden="false" targetId="bb6e-2a72-519d-8cc7" type="profile" name="Assault Rifle"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="1243-e8b7-ed01-2010" name="Amphibious" page="0" hidden="false"/>
@@ -1440,6 +1433,51 @@ Ignores the Gun Shield rule</description>
     <rule id="a52c-ff9f-bb1c-b2be" name="Vulnerable" page="0" hidden="false">
       <description>All shots to side and rear +1 penetration modifier.</description>
     </rule>
+    <rule name="Assault" id="5730-1c77-78e7-67bc" hidden="false">
+      <description>Units do not automatically gain Tough Fighters from weapons with the Assault tag.</description>
+    </rule>
+    <rule name="Close Quarters Combat Training (CQC)" id="0475-3100-0cc4-a1b9" hidden="false">
+      <description>This unit is specially trained in CQC and is quite deadly in confined spaces and close encounters. If a soldier with the CQC tag is equipped with weapons designed for close combat, he can make two attacks in close combat. 
+
+
+Note: This rule works in tandem with Tough Fighters.</description>
+    </rule>
+    <rule name="Self-Loading Rifle (SLR) " id="e72b-998b-6808-3f0e" hidden="false">
+      <description>Due to the higher caliber and recoil than assault rifles these rifles can are hard to control in automatic fire mode. Weapons with the SLR rule can fire only 1 time when used during an advance order but can fire 2 times like assault rifles during a fire order.</description>
+    </rule>
+    <rule name="Carbine" id="a366-fdd7-12e6-e0b1" hidden="false">
+      <description>Carbines are short barreled versions of certain assault rifles. They have a lower range than assault rifles (12´´ vs. 18´´) but are not affected by body armour (Like SMGs are). Additionally, it is possible to fire at longer ranges (18´´) but only with a lower rate of fire (1 shot instead of 2). 
+
+
+A carbine equipped with a modern rifle optic has a higher basic range of 18´´ (See Modern Rifle Optics (MRO)) and can thus fire 2 shots at 18´´.  </description>
+    </rule>
+    <rule name="Modern Rifle Optics (MRO)" id="220c-396d-9334-f889" hidden="false">
+      <description>These weapons are equipped with modern rifle optics (Like the SUSAT scope, or the Aimpoint 1000/2000), which improve target acquisition compared to iron sights. This gives a 6’’ range bonus to infantry weapons equipped with these.</description>
+    </rule>
+    <rule name="Designated Marksman Rifle (DMR)" id="d1cd-3afa-dc75-5620" hidden="false">
+      <description>These weapons are specialized marksman rifles which can serve as fire support for a squad. When firing a DMR, roll two D6 and choose the higher value.</description>
+    </rule>
+    <rule name="Breaching" id="d32e-2d04-e0da-7a8b" hidden="false">
+      <description>This weapon is very effective in close combat, especially in room clearing. If a soldier that is equipped with a weapon that has the Breaching tag kills an enemy, he immediately can do another attack. This effect can “stack” until a dice roll misses. </description>
+    </rule>
+    <rule name="Rotary Cannon" id="2a48-8c3f-151d-d1bd" hidden="false">
+      <description>This is a gatling-type weapon, which doubles the dices used for attacks, due to the high rate of fire. This rule only counts for autocannons and machineguns. After every attack the player must make a +3 roll to see if the gun overheats. In case of failing this roll the weapon is unavailable in the next turn, due to overheating. </description>
+    </rule>
+    <rule name="Smoke Grenades " id="6a65-cb9e-f152-ce2f" hidden="false">
+      <description>These grenades are used for providing smoke screens and works like smoke shells used by mortars or artillery. The diameter of the smoke screen is similar to the one of the light mortar (3’’) and hit on a roll of 3+. In case of a miss, the enemy player may move the smoke screen up to 6’’. </description>
+    </rule>
+    <rule name="Stun Weapon" id="42ee-10a6-6c8d-04cc" hidden="false">
+      <description>This weapon does not do damage but gives 1 D3 pin markers and forces the target to go down for the remainder of the turn, if no previous order has been given to the target. If the roll to hit is a natural one the effect is applied to the user of the stun grenade (Representing a missed roll) </description>
+    </rule>
+    <rule name="Heli" id="56ec-41b4-ed35-3a0f" hidden="false">
+      <description>This unit is using the helicopter rules and can be targeted by anti-air or ground weapons depending on its flying level (See helicopter rules). 
+
+
+Additionally, all unguided weapons (MGs, AGLs, Automatic Cannons etc.) that are used by a helicopter receive the Aerial Ammunition rule (Weapons that already have the rule are exempted from this). </description>
+    </rule>
+    <rule name="Delicate" id="5995-9cf1-4ffe-ff1a" hidden="false">
+      <description>This plane/helicopter is extraordinarily vulnerable, and it is easy to hit vital parts. Because of this it receives a +1 modifier (Stacks with the usual +1 modifier that Helis receive) for the damage result chart.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="12a3-5bb9-da85-827e" name="Anti-tank rifle" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
@@ -1452,16 +1490,18 @@ Ignores the Gun Shield rule</description>
     </profile>
     <profile id="bb6e-2a72-519d-8cc7" name="Assault Rifle" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">18&quot;</characteristic>
         <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
         <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
       </characteristics>
     </profile>
-    <profile id="0fdf-82ff-d2af-adbc" name="Automatic Rifle" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
+    <profile id="0fdf-82ff-d2af-adbc" name="Automatic Rifle/Light Support  Weapon (LSW) " page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
-        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">3
+
+</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
         <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">-</characteristic>
       </characteristics>
@@ -1561,8 +1601,8 @@ Ignores the Gun Shield rule</description>
     </profile>
     <profile id="7533-d12d-21e3-496b" name="Light Machine Gun (LMG)" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
-        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">3</characteristic>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">36&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">4</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
         <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team</characteristic>
       </characteristics>
@@ -1594,7 +1634,7 @@ Ignores the Gun Shield rule</description>
     <profile id="2f62-c9ad-30ac-07bb" name="Medium Machine Gun (MMG)" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">36&quot;</characteristic>
-        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">4</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">5</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
         <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed</characteristic>
       </characteristics>
@@ -1644,7 +1684,7 @@ Ignores the Gun Shield rule</description>
         <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">6&quot;</characteristic>
         <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
-        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault, CQC</characteristic>
       </characteristics>
     </profile>
     <profile id="d57f-3e60-a0d9-ecda" name="Regular" page="0" hidden="false" typeId="2824ab73-d5bb-a968-a566-19371da1c5e4" typeName="Troop Quality">
@@ -1652,7 +1692,7 @@ Ignores the Gun Shield rule</description>
         <characteristic name="Morale" typeId="cd18296c-c82a-5671-d4f4-db025626d4e9">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="0caf-6e4d-d0b7-b6e4" name="Rifle" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
+    <profile id="0caf-6e4d-d0b7-b6e4" name="Rifle (Bolt Action/Semiautomatic)" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
         <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
@@ -1665,7 +1705,7 @@ Ignores the Gun Shield rule</description>
         <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12&quot;</characteristic>
         <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
-        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault, CQC</characteristic>
       </characteristics>
     </profile>
     <profile id="b0f1-65f1-4c8b-b079" name="Super-heavy AT gun" page="0" hidden="false" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon">
@@ -1687,6 +1727,102 @@ Ignores the Gun Shield rule</description>
         <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
         <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
         <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Indirect fire, HE(D2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Personal Defence Weapon (PDW)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="f09e-d8aa-bbf0-a8a7" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">9&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">3</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault, CQC</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Battle Rifle" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="6034-ac2e-3353-09fc" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1/2</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Self-Loading Rifle </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Carbine" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="e42f-9983-85ce-5d69" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12&quot;/18&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2/1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault, CQC, Carbine</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Barreled Rifle (HBAR)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="bf9d-495b-894b-f903">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">3</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Designated Marksman Rifle (DMR)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="65a8-97e7-eed3-5b37">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">DMR</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shotgun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="7071-76c2-b44e-3918">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">-1 Pen</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Breaching, CQC</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gatling Machine Gun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="8fb1-840d-3d93-1033">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">36&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">5</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, Rotary Cannon</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Squad Automatic Weapon (SAW)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="83ee-a729-6206-23eb">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">4</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Squad Automatic Weapon (HSAW)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="150e-974d-e98f-0d93">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">4</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="General Purpose Machine Gun (GPMG)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="b130-0f26-0a7c-1fe0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">5</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stun Grenade/Flashbang" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="af24-fcf4-5eff-3aff">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">6&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Stun Weapons, One-Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Smoke Grenade/Discharger" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="569d-e3ad-625e-a236">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">6&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Smoke Grenades, One Shot</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
