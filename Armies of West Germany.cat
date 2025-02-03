@@ -226,9 +226,6 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d18-cc24-86e3-4062"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
