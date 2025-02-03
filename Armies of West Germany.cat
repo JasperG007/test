@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="8bb2-8f66-c423-f6fe" name="Armies of West Germany" gameSystemId="d373-d979-116c-5487" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Generic Reinforced Platoon" id="470f-da58-2f01-ff96" hidden="false">
+      <comment>Generic Reinforced Platoon</comment>
+      <categoryLinks>
+        <categoryLink name="Tows" hidden="false" id="16ad-5b93-582c-0e4f" targetId="55a12a58-a9e0-3acc-260d-ed2e4bac108f" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="ddbb-9e56-9e3c-b00c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="72807c5d-e370-9ddf-c2b7-de5d2797f24d" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="ddbb-9e56-9e3c-b00c" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Free Units" hidden="false" id="2c4f-867b-59b8-7500" targetId="0fcbe145-b362-4be0-2491-dbf2db078475" primary="false"/>
+        <categoryLink name="Compulsory " hidden="false" id="d181-0dec-0aab-61a5" targetId="f543-f483-48ce-9b05" primary="false">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ea9e-10fc-389f-24d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e65e-9272-d966-84e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Headquarters" hidden="false" id="8cf6-e83f-2fc1-099f" targetId="481abf13-c03e-0dd0-d520-9f9837253cbe" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="bda3-4dc8-d4fa-2884" targetId="5c47879b-41d0-1383-5fe5-a5989615db89" primary="false">
+          <modifiers>
+            <modifier type="set" value="3" field="72e2-1331-69f7-be6d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="3e12-a195-712f-6413" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="9bb7-ec4c-641b-abf4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="72e2-1331-69f7-be6d" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Infantry Support" hidden="false" id="cc5d-00e4-753c-220f" targetId="a01f5f58-334c-8442-d861-15099ebdf5e5" primary="false"/>
+        <categoryLink name="Artillery" hidden="false" id="e8fa-7390-c387-ab60" targetId="72807c5d-e370-9ddf-c2b7-de5d2797f24d" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3c85-ec76-b91c-9828" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Armoured Cars and Recce Vehicles" hidden="false" id="9c24-f5b9-adde-0dab" targetId="f2903219-8ebc-8034-37ec-78a7f9040c20" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="409e-d608-34fb-d9ab" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Tanks, Tank Destroyers, Self-propelled Artillery and Anti-Aircraft Vehicles" hidden="false" id="58af-6493-c91b-a5bc" targetId="75e6-a726-7549-c811" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54c4-6269-3c42-d4b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Transports" hidden="false" id="409d-41ff-29ff-b480" targetId="963d0e80-c58a-29e1-9b32-87e8ef7ebb0e" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="3bc4-a591-7091-806b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5c47879b-41d0-1383-5fe5-a5989615db89" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3bc4-a591-7091-806b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="a01f5f58-334c-8442-d861-15099ebdf5e5" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3bc4-a591-7091-806b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="481abf13-c03e-0dd0-d520-9f9837253cbe" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3bc4-a591-7091-806b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="f543-f483-48ce-9b05" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="3bc4-a591-7091-806b" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Regular Infantry Squad (Early/Mid- War)" hidden="false" id="be3b-fa90-1137-7428" page="0" collective="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Anti-tank Grenades" hidden="false" id="d2f2-dbac-7893-b86b" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eaa9-65a5-ab85-f052" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Tank Hunters" id="cc9f-4e90-cf51-1e5c" hidden="false" targetId="3b00-5743-842c-4640" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Anti-tank Grenades" hidden="false" id="dc36-1796-e9b2-88c8" collective="false">
+              <modifiers>
+                <modifier type="increment" value="1" field="5dd8-2333-b7e4-2a04">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="be3b-fa90-1137-7428" childId="abeb-b969-7dc6-33c4" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="5dd8-2333-b7e4-2a04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="12" field="selections" scope="parent" shared="false" id="83dc-0f4d-a149-8fa7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squad Members" id="abeb-b969-7dc6-33c4" hidden="false" collective="false">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="false" id="cd54-4dfa-c7d4-8bf5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="false" id="4d71-5b5f-a96e-1d9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Regular NCO" hidden="false" id="6e35-dd06-1074-399e" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fcb3-3202-06da-fcbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f417-46d0-6df1-da50" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Regular" id="f87f-8456-53a2-2121" hidden="false" targetId="d57f-3e60-a0d9-ecda" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="eefa-cc7b-a9ca-90a0" hidden="false" collective="false" defaultSelectionEntryId="c5a4a03c-a4f2-e7b7-066f-6fef27edb2fe">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8938-1884-b52d-1f93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a4c7-1c9d-e96e-791a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="M1 Garand rifle" hidden="false" id="2772-6f20-533e-a145" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8720-f4c1-7371-504e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Rifle" id="090e-c79e-aef2-146c" hidden="false" targetId="0caf-6e4d-d0b7-b6e4" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="fbe1-9dab-d79e-00e1" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5ac3-bb3e-93b5-d0fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Submachine Gun (SMG)" id="6afb-83a8-87b0-464f" hidden="false" targetId="d96f-07e6-9c33-c3b6" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Regular Soldier" hidden="false" id="bc5e-7281-853d-c688" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="3066-d2e6-1433-ea44" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="11" field="selections" scope="parent" shared="false" id="9ad6-3734-9cea-6577" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Regular" id="4d76-381c-703e-7783" hidden="false" targetId="d57f-3e60-a0d9-ecda" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="M1 Garand rifle" hidden="false" id="de32-823e-b2bc-319f" collective="false" targetId="e654-4f23-295d-f471" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Regular Soldier with Bar M1918A2" hidden="false" id="44f0-fd2b-bdaa-fcbb" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d3b2-9a8b-ae8e-eb9f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Regular" id="041e-6cb9-80e6-3a9b" hidden="false" targetId="d57f-3e60-a0d9-ecda" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bar M1918A2" hidden="false" id="2d2a-820f-4c26-9d2c" collective="false" targetId="53a7-a62b-0698-3e26" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M1 Garand rifle or carbine" hidden="false" id="3884-7d2e-e012-cc69" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4a17-95fc-cc11-dfe9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d42f-d50c-40cd-41b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Rifle" id="7e4a-45e4-b3f9-8eed" hidden="false" targetId="0caf-6e4d-d0b7-b6e4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M1 Garand rifle" hidden="false" id="e654-4f23-295d-f471" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="9403-864d-691f-0949" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0dfc-df17-bf63-650d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Rifle" id="8a34-90ad-0d87-fae1" hidden="false" targetId="0caf-6e4d-d0b7-b6e4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bar M1918A2" hidden="false" id="53a7-a62b-0698-3e26" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="31a8-ec69-66bb-ca6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b56e-117e-fa58-056f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Automatic Rifle" id="13cb-28fc-3d42-83d3" hidden="false" targetId="0fdf-82ff-d2af-adbc" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="5c1a-6259-af03-fdf5" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b6a8-2174-fcfd-2b2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="77d7-7dcc-80b5-7c59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Submachine Gun (SMG)" id="88d3-5404-0c88-0b82" hidden="false" targetId="d96f-07e6-9c33-c3b6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="3"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="false" name="Regular Infantry Squad (Early/Mid- War)" hidden="true" id="712a-23ed-4c08-1b66" collective="false" targetId="be3b-fa90-1137-7428" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or"/>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f543-f483-48ce-9b05" id="378f-f87f-5e8f-bd88" primary="true" name="Compulsory "/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedRules>
+    <rule name="75MM AT-gun" id="7af1-a265-043d-7ac7" hidden="false" page="0">
+      <description>HE: Instead of causing D2 HE hits, an HE shell causes D6 hits.</description>
+    </rule>
+    <rule name="Amphibious" id="872c-e4e9-1aa1-d6bb" hidden="false" page="0"/>
+    <rule name="Armoured all round" id="cf5e-d967-c55c-a965" hidden="false" page="0">
+      <description>no modifiers apply for penetration when shooting at sides, rear or from above.</description>
+    </rule>
+    <rule name="Armoured Platoon" id="4463-969b-5eeb-6901" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden"/>
+      </modifiers>
+      <description>The Armoured Platoon must include enough transport vehicles and/or tows (either soft-skin or armoured) to transport all models in the infantry and artillery units in the platoon, up to a maximum of one transport vehicle per unit of Infantry and /or Artillery.  The only units that are an exception to this, and which cannot have a transport vehicle are mounted cavalry units and units on motorcycles.</description>
+    </rule>
+    <rule name="ARVs and Force Selection" id="c168-9057-e7f9-b393" hidden="false" publicationId="8fdf-4868-pubN130215" page="80">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden"/>
+      </modifiers>
+      <description>Yo may include up to one ARV in your army for every two non-ARV vehicles of damage value 8 or greater you have.</description>
+    </rule>
+    <rule name="Baptism of Fire" id="2821-7421-e68c-01f0" hidden="false" page="0">
+      <description>No forces can be veteran</description>
+    </rule>
+    <rule name="Behind Enemy Lines" id="ae1b-ff63-0cb0-23db" hidden="false" page="0"/>
+    <rule name="Bicycles" id="73db-713c-1faa-504d" hidden="false" page="0">
+      <description>Bicycle mounted infantry follow the same rules as infantry, except when mving entirely on a road, in which case they double their Run move to 24&quot;.  (This move cannot be used to Assault). In addition, the first time they receive any order other than Run, or if they receive a pinning marker, they dismount and abandon their bycycles for the rest of the game - replace the models with models on foot.</description>
+    </rule>
+    <rule name="Cavalry" id="4adb-a959-aa92-f0ea" hidden="false" page="0"/>
+    <rule name="Co-axial Weapon" id="0a62-ea22-afc3-e91f" hidden="false" page="0">
+      <description>A coa-axial can be fired instead of the vehicle&apos;s main weapon, but not at the same time - the player must choose either to fire the main gun or it&apos;s co-axial weapon.</description>
+    </rule>
+    <rule name="Command Vehicle" id="5a1f-aeb3-a087-11ea" hidden="false" page="0"/>
+    <rule name="Crew (2)" id="4217-8993-1e37-188c" hidden="false" page="0"/>
+    <rule name="Crew (3)" id="9260-2d8b-4df0-fbb1" hidden="false" page="0"/>
+    <rule name="Crew (4)" id="6c9f-79fe-7c11-9c23" hidden="false" page="0"/>
+    <rule name="Crew (5)" id="4bf8-575f-efa4-e423" hidden="false" page="0"/>
+    <rule name="Crew (6)" id="f5a1-5990-be00-41e4" hidden="false" page="0"/>
+    <rule name="Crew (7)" id="5d6b-29cb-15ba-4dd1" hidden="false" page="0"/>
+    <rule name="Crew Carried MMG" id="59fa-8415-1ed4-03d4" hidden="false" page="0">
+      <description>360° arc of fire
+The crew can fire the LMG or the main gun, but not both at the same time</description>
+    </rule>
+    <rule name="Dual Direction Steering" id="4dcb-184f-4f6f-0640" hidden="false" page="0"/>
+    <rule name="Easily Catches Fire" id="2343-07e2-1c7f-9b98" hidden="false" page="0"/>
+    <rule name="Fanatics" id="aba3-3c8b-1ae3-bf23" hidden="false" page="0"/>
+    <rule name="Fixed" id="d90a-6a40-48e7-9e14" hidden="false" page="0">
+      <description>Cannot be fired under an advance order
+Can only target units at leat partially in their front arc</description>
+    </rule>
+    <rule name="Flak" id="df3f-167c-e5f7-f6e1" hidden="false" page="0">
+      <description>Can fire at strafing aircraft at -2 to hit</description>
+    </rule>
+    <rule name="Flame-throwing Vehicle" id="3516-d00c-7687-d247" hidden="false" page="0">
+      <description>Flame-throwing vehicles are more likely to be destroyed, as explained on page 51 of the rulebook.</description>
+    </rule>
+    <rule name="Flamethrower" id="2c14-db7d-312a-117e" hidden="false" page="0">
+      <description>Hits automatically ignoring any modifier.
+D6 hits for man portable flamethrowers, 2D6 hits for vehicle mounted ones
+Ignores the Gun Shield rule
+Ignores the Extra Protection rule in buildings
+Infantry takes D3+1 pin markers for being hit by a flamethrower</description>
+    </rule>
+    <rule name="Green" id="ad52-51c2-55d7-cc96" hidden="false" page="0">
+      <description>Green Units are Inexperienced. When the unit suffers its first casualty roll a die: 
+on a roll of 1 the unit suffers an additional D6 Pin Markers and goes Down;
+on a roll of 2,3 or 4 nothing happens;
+on a roll of 5 or 6 the unit is immediately uprated to Regular for the rest of the battle.</description>
+    </rule>
+    <rule name="Gun Shield" id="6cef-0350-9289-e6d9" hidden="false" page="0">
+      <description>If fired at from the front, crew is 6+ to damage</description>
+    </rule>
+    <rule name="Gyro Stabilized" id="01ce-144a-f425-8418" hidden="false" page="0"/>
+    <rule name="HE (2D6)" id="c338-5f8f-b5eb-432f" hidden="false" page="0">
+      <description>Hits are multiplied by the modifier
+Hits against infantry that reacts going Down are halved rounding down
+If able to fire both HE and Anti-tank, when firing from Ambush, must specify which round is loaded
+2D6 Hits, D3 Pin Markers, +3 PEN</description>
+    </rule>
+    <rule name="HE (3D6)" id="1759-8d1c-9b13-eb03" hidden="false" page="0">
+      <description>Hits are multiplied by the modifier
+Hits against infantry that reacts going Down are halved rounding down
+If able to fire both HE and Anti-tank, when firing from Ambush, must specify which round is loaded
+3D6 Hits, D6 Pin Markers, +4 PEN</description>
+    </rule>
+    <rule name="HE (D3)" id="6113-b66d-3325-36f6" hidden="false" page="0">
+      <description>Hits are multiplied by the modifier
+Hits against infantry that reacts going Down are halved rounding down
+If able to fire both HE and Anti-tank, when firing from Ambush, must specify which round is loaded
+D3 Hits, 1 Pin Marker, +1 PEN</description>
+    </rule>
+    <rule name="HE (D6)" id="a5b6-8bdb-40eb-d85b" hidden="false" page="0">
+      <description>Hits are multiplied by the modifier
+Hits against infantry that reacts going Down are halved rounding down
+If able to fire both HE and Anti-tank, when firing from Ambush, must specify which round is loaded
+D6 Hits, D2 Pin Markers, +2 PEN</description>
+    </rule>
+    <rule name="Heavy Frontal Armour" id="ba8a-2fa3-d962-7c88" hidden="false" page="0">
+      <description>All shots hitting the front of the vehicle counts it&apos;s damage value as +1</description>
+    </rule>
+    <rule name="Howitzer" id="595b-7cb4-dda4-5a9a" hidden="false" page="0">
+      <description>When firing over open sights it has no minimum range
+When firing indirect, minimum range is 24&quot;</description>
+    </rule>
+    <rule name="Indirect Fire" id="b5f7-0c62-e640-d975" hidden="false" page="0">
+      <description>Can target only units without minimum range
+Requires 6 to hit on first attempt: -1 for each successive attempt if firer and target have not moved. If a hit is scored, all further attempts are at 2+
+Can target enemy units even if friends are in the way, as long as it has line of sight
+When firing at vehicles hits top armour and adds +1 PEN and +1 to Damage Rolls
+Cannot be given Ambush orders
+Can fire Smoke Screens</description>
+    </rule>
+    <rule name="Low Velocity" id="cd67-6cbe-980f-d4aa" hidden="false" page="0">
+      <description>Low velocity light AT-gun&apos;s armour penetration counts as +3 instead of +4</description>
+    </rule>
+    <rule name="Massive shells" id="d217-4fee-23a3-ac06" hidden="false" page="0">
+      <description>Does not suffer -1 penetration penalty when shooting at targets at over half range.</description>
+    </rule>
+    <rule name="Motorbikes" id="be59-0e92-8e81-bad1" hidden="false" page="0"/>
+    <rule name="Multiple Launcher" id="17b8-b378-0e12-0b11" hidden="false" page="0"/>
+    <rule name="One-man turret" id="7f3e-4668-bcb6-5aa5" hidden="false" page="0"/>
+    <rule name="One-Shot Weapon" id="7d57-03af-ff8b-3a0c" hidden="false" page="0"/>
+    <rule name="Open Topped" id="2448-f8c4-6f40-a564" hidden="false" page="0">
+      <description>Can be Pinned by small arms fire
+If damaged by assaulting infantry, open topped vehicle are Destroyed automatically
+If hit by indirect HE fire, add +1 to PEN AND +1 to damage rolls</description>
+    </rule>
+    <rule name="Recce" id="d052-fddf-a530-840d" hidden="false" page="0">
+      <description>If fired at or assaulted can attempt to Escape</description>
+    </rule>
+    <rule name="Reinforced Rear Armour" id="5fdd-319b-ec74-25cb" hidden="false" page="0">
+      <description>Counts hits against the rear armour as hits against the side armour (i.e. +1 penetration instead of +2 penetration)</description>
+    </rule>
+    <rule name="Schurzen Armoured Skirts" id="d108-0d25-a066-6d74" hidden="false" page="0">
+      <description>Anti-tank rifles and shaped charges never recieve the +1 penetration bonus for hitting the vehicle in the side.</description>
+    </rule>
+    <rule name="Shaped Charge" id="fbcd-91e4-f56c-ee32" hidden="false" page="0">
+      <description>Suffers -1 on all rolls to hit
+Never suffer -1 penalty at penetration for firing at long range</description>
+    </rule>
+    <rule name="Shirkers" id="8443-906e-8521-e1a6" hidden="false" page="0">
+      <description>Must always take an order test when given an order, even if not Pinned.
+When Pinned always count Pinned Markers as Double, ie one Pin Marker gives a -2 penalty, 2 is -4 etc.</description>
+    </rule>
+    <rule name="Slow" id="66ad-b85f-d324-efbf" hidden="false" page="0">
+      <description>can only move 6&quot; when Advancing and 12&quot; when Running</description>
+    </rule>
+    <rule name="Sniper" id="a797-4e0f-2ae1-778c" hidden="false" page="0">
+      <description>When firing under Fire or Ambush orders only:
+Range is 36&quot; and hits at +1
+Can target a specific model as per Exceptional Damage
+Ignores all penalties for cover
+Ignores the Gun Shield rule</description>
+    </rule>
+    <rule name="Squeeze Bore" id="17c8-f042-fcb1-da74" hidden="false" page="0">
+      <description>At ranges up to 12&quot;, it&apos;s base armour penetration is increased by 2, at over half range armour penetration is reduced by 2 instead of the normal 1.</description>
+    </rule>
+    <rule name="Stubborn" id="02b4-e180-0e96-0399" hidden="false" page="0"/>
+    <rule name="Tank Hunters" id="045c-0748-9319-ab40" hidden="false" page="0">
+      <description>No Tank Fear test when assaulting Tanks if Anti-tank Grenades have been taken</description>
+    </rule>
+    <rule name="Team Weapon" id="4fbe-33c1-be42-98a7" hidden="false" page="0">
+      <description>A minimum of two crew is required to fire at full effect. If only one crew is left, fires at -1 to hit and has -1 morale</description>
+    </rule>
+    <rule name="Tough Fighters" id="8419-3f07-f9d3-bd59" hidden="false" page="0"/>
+    <rule name="Turn on the spot. " id="3a58-c805-8ea6-94dc" hidden="false" page="0"/>
+    <rule name="Unreliable" id="8b86-c689-04d3-5f17" hidden="false" page="0">
+      <description>If this vehicle suffers one or more pin markers as a result of an enemy attack it automatically suffers one further pin marker in addition.</description>
+    </rule>
+    <rule name="Vulnerable" id="f276-b33b-2fb1-e234" hidden="false" page="0">
+      <description>All shots to side and rear +1 penetration modifier.</description>
+    </rule>
+    <rule name="Weak Side Armour" id="0017-6cc3-bc18-1cf9" hidden="false" page="0">
+      <description>Weak side armour means that all shots to the side oof the vehicle count as to the rear  with a +2 penetration modifier</description>
+    </rule>
+  </sharedRules>
+  <rules>
+    <rule name="Air Superiority" id="11dd-7121-a988-ba0c" hidden="false" page="0"/>
+    <rule name="Fire And Manoeuvre" id="e64b-1ea0-cf67-03ac" hidden="false" page="0"/>
+    <rule name="Gyro-stabilisers" id="8e88-a044-799d-82db" hidden="false" page="0"/>
+  </rules>
+  <infoLinks>
+    <infoLink name="Armoured Platoon" id="c684-a425-7981-2eac" hidden="false" targetId="1a7b-11ce-f15e-74eb" type="rule">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="force" childId="b74c-0362-b3e7-eaff" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </infoLink>
+    <infoLink name="ARVs and Force Selection" id="3600-2bbb-4d2e-1b89" hidden="false" targetId="237c-9f95-b56c-5449" type="rule">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="force" childId="b74c-0362-b3e7-eaff" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </infoLink>
+  </infoLinks>
+  <sharedProfiles>
+    <profile name="Anti-tank rifle" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="d087-2d9b-7abe-cd78" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">36&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+2</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Assault Rifle" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="22dc-c25f-2143-6fbc" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Automatic Rifle" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="0a04-c9bc-b4ab-6cb4" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bazooka" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="3928-dac0-30ee-20c4" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+5</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Shaped Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Flamethrower (Infantry)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="c8dd-aca2-f56b-0d84" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">6&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">D6</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+2</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Flamethrower</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Flamethrower (Vehicle)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="370e-5fcd-df43-5ca3" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">18&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2D6</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+3</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Flamethrower</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy AT Gun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="1b5e-7738-5b78-77b3" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">72&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+6</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, HE (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy automatic cannon" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="ece6-b2df-8372-d5b5" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">72&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+3</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, HE (D2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Howitzer" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="a730-7e83-505f-5ac3" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">(0/24&quot;) - 72&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, Howitzer, HE (3D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Machine Gun (HMG)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="e9f2-002e-b412-5fa5" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">36&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">3</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+1</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Mortar" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="996c-0697-134a-f447" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">16&quot; - 72&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, Indirect fire, HE (2D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light AT gun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="bfa3-7140-b7d4-c36b" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">48&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+4</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, HE (D2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light automatic cannon" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="e7ea-5a9f-26ea-ad17" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">48&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+2</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed,  HE (D2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light howitzer" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="b087-2f33-2258-0f97" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">(0/24&quot;) - 48&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, Howitzer, HE (D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light Machine Gun (LMG)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="da5c-63d4-8a8a-f346" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">30&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">3</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Light mortar" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="cc85-69ba-c65f-b773" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12&quot;-24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Indirect Fire, HE (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medium AT Gun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="0bf0-de4a-80a9-5248" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">60&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+5</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, HE (D2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medium Howitzer" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="59bf-05e6-5c7a-c7fa" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">(0/24&quot;) - 60&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, Howitzer, HE (2D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medium Machine Gun (MMG)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="3456-59a7-0b1c-2214" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">36&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">4</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medium Mortar" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="343a-d3ed-0b7d-168a" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">18&quot; - 60&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">HE</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, Indirect fire, HE (D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Panzerfaust" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="4096-7e5d-5c4e-d56e" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+6</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">One-shot, Shaped Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Panzerschreck" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="3632-b63d-f477-a721" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+6</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Shaped Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="PIAT" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="3a9a-39da-f41b-2c78" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+5</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Shaped Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistol" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="316f-957b-be67-301c" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">6&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="ea66-be43-5365-4995" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">24&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shotgun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="2985-8ee8-2d3f-57a1">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">18&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Submachine Gun (SMG)" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="3e5f-b420-2277-c8b4" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">12&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">2</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">n/a</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Assault</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Super-heavy AT gun" typeId="58b84a31-b571-5b2b-0a61-a8b39a74f6eb" typeName="Weapon" hidden="false" id="5ca6-92d6-5e99-054a" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="d527d332-6869-32b4-3a5a-13127d8e04c9">84&quot;</characteristic>
+        <characteristic name="Shots" typeId="4026822d-22f6-f9c5-1a3b-b8c72f88f7ef">1</characteristic>
+        <characteristic name="Penetration" typeId="a46d52c2-b1b5-dd31-879a-e64572cd9dc8">+7</characteristic>
+        <characteristic name="Special Rules" typeId="a20985c1-29eb-9dbc-db45-3d439b60eed7">Team, Fixed, HE(D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Inexperienced" typeId="2824ab73-d5bb-a968-a566-19371da1c5e4" typeName="Troop Quality" hidden="false" id="f0bf-d760-523b-a655" page="0">
+      <characteristics>
+        <characteristic name="Morale" typeId="cd18296c-c82a-5671-d4f4-db025626d4e9">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Regular" typeId="2824ab73-d5bb-a968-a566-19371da1c5e4" typeName="Troop Quality" hidden="false" id="c7f7-9329-4f99-e554" page="0">
+      <characteristics>
+        <characteristic name="Morale" typeId="cd18296c-c82a-5671-d4f4-db025626d4e9">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Veteran" typeId="2824ab73-d5bb-a968-a566-19371da1c5e4" typeName="Troop Quality" hidden="false" id="81bb-f960-59f7-e304" page="0">
+      <characteristics>
+        <characteristic name="Morale" typeId="cd18296c-c82a-5671-d4f4-db025626d4e9">10</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
