@@ -135,17 +135,6 @@
   </sharedSelectionEntryGroups>
   <entryLinks>
     <entryLink import="true" name="UH-1 Transport Helicopter" hidden="true" id="0b9b-9a81-054a-1ff4" collective="false" targetId="be90-548d-d101-661a" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="3405-5ee7-b561-d127" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Tanks, Tank Destroyers, Self-propelled Artillery and Anti-Aircraft Vehicles" hidden="false" id="1b97-38d7-d138-5b24" targetId="75e6-a726-7549-c811" primary="true"/>
       </categoryLinks>
@@ -154,7 +143,7 @@
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="UH-1 Transport Helicopter" hidden="false" id="be90-548d-d101-661a" page="0" collective="false">
       <profiles>
-        <profile name="Wirbelwind" typeId="aeeca1a9-3e42-7eda-24d1-e7e391c4cce9" typeName="Vehicle" hidden="false" id="96d1-7d10-ace7-2f98">
+        <profile name="UH-1 Transport Helicopter" typeId="aeeca1a9-3e42-7eda-24d1-e7e391c4cce9" typeName="Vehicle" hidden="false" id="96d1-7d10-ace7-2f98">
           <characteristics>
             <characteristic name="Type" typeId="883e2c25-e5fe-0035-c00b-88687cd7255a">Tracked Vehicle</characteristic>
             <characteristic name="Damage Value" typeId="449784a0-465a-7126-6bff-16d562020e3f">Medium Tank 9+</characteristic>
@@ -214,18 +203,14 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Options" hidden="false" id="7acf-7908-113f-fadf">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name=" side-facing pintle mounted MMGs" hidden="false" id="ba83-1bc0-3b7a-9b45">
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f52d-3a39-e49e-8b18"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0ddb-4df3-4c9f-7aef"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Side-facing pintle mounted MMGs" hidden="false" id="7acf-7908-113f-fadf">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="49dd-20f4-0e99-c039"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce14-5a79-a17b-2714"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
